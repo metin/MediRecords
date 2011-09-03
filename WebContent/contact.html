@@ -1,0 +1,236 @@
+<HTML>
+<HEAD>
+<TITLE>Contact</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF background="images/back-body.jpg" LEFTMARGIN=0 TOPMARGIN=0 rightmargin="0" bottommargin="0" MARGINWIDTH=0 MARGINHEIGHT=0 style="overflow-x:hidden " onLoad="MM_preloadImages('images/HomeDown.png','images/HomeOver.png','images/AboutDown.png','images/AboutOver.png','images/ContactDown.png','images/ContactOver.png','images/FaqDown.png','images/FaqOver.png','images/MembersDown.png','images/MembersOver.png')">
+<center>
+<table width="783" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="9" height="100%" background="images/back-left.jpg"><img src="images/spacer.gif" width="9" height="1"></td>
+	
+	
+    <td width="765" height="100%" valign="top" background="images/back-end.jpg">
+		<table width="100%" height="100%"  border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td colspan="2" WIDTH=765 height="102"><table border="0" cellpadding="0" cellspacing="0">
+			  <tr>
+			    <td><a href="index.jsp" target="_top" onClick="MM_nbGroup('down','group1','Home','images/HomeDown.png',1)" onMouseOver="MM_nbGroup('over','Home','images/HomeOver.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/HomeUp.png" alt="" name="Home" width="155" height="76" border="0" onload=""></a></td>
+			    <td><a href="about.html" target="_top" onClick="MM_nbGroup('down','group1','About','images/AboutDown.png',1)" onMouseOver="MM_nbGroup('over','About','images/AboutOver.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/AboutUp.png" alt="" name="About" width="155" height="76" border="0" onload=""></a></td>
+			    <td><a href="contact.html" target="_top" onClick="MM_nbGroup('down','group1','Contact','images/ContactDown.png',1)" onMouseOver="MM_nbGroup('over','Contact','images/ContactOver.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/ContactUp.png" alt="" name="Contact" width="155" height="76" border="0" onLoad=""></a></td>
+			    <td><a href="faq.html" target="_top" onClick="MM_nbGroup('down','group1','Faq','images/FaqDown.png',1)" onMouseOver="MM_nbGroup('over','Faq','images/FaqOver.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/FaqUp.png" alt="" name="Faq" width="155" height="76" border="0" onLoad=""></a></td>
+			    <td><a href="index2.jsp" target="_top" onClick="MM_nbGroup('down','group1','Members','images/MembersDown.png',1)" onMouseOver="MM_nbGroup('over','Members','images/MembersOver.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/MembersUp.png" alt="" name="Members" width="155" height="76" border="0" onLoad=""></a></td>
+			    </tr>
+		    </table></td>
+		</tr>
+		<tr>
+			<td width="210" height="10" valign="top">
+				<table width="210" height="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr><td><img src="images/up-1.jpg" width="210" height="60"></td></tr>
+				<tr>
+					<td width="210" height="10" background="images/back-up-1.jpg" style="padding-left:8px;padding-right:5px;padding-top:5px ">
+						<img src="images/3-pic-1.jpg" width="83" height="118" align="left" style="margin-right:14px;margin-top:5px;margin-bottom:1px">
+						<img src="images/text-1.jpg" width="85" height="18"><br>
+<font face="tahoma" style="font-size:10px;color:#777777;line-height:11px">Send us a message. One of our representative will contact you as soon as possible. Thank you.<br><div style="padding-top:10px; line-height:11px"></div>
+							<div style=" padding-top:1px"><a href="#" style="color:#FF0600;text-decoration:none"><strong>learn more</strong></a> <img src="images/but-red.jpg" width="15" height="7" align="middle"></div>
+					  </font>						
+					</td>
+				</tr>
+				<tr><td><img src="images/but-1.jpg" width="210" height="42"></td></tr>
+				<tr>
+					<td width="210" height="10" bgcolor="#64A5CF">
+						<table width="100%" height="100%"  border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td valign="top" align="right" style="padding-left:10px;padding-right:8px;padding-top:13px"><font face="tahoma" style="font-size:11px;color:#FFFFFF"><strong>Login:<div style=" padding-top:14px">Password:</div></strong></font></td>
+							<td valign="top" style="padding-top:10px;padding-bottom:11px"><input type="text" style="width:93px;height:17px;font-size:11px;margin-bottom:8px"><br><input name="" type="password" style="width:93px;height:17px;font-size:11px"></td>
+							<td valign="top" style="padding-right:5px;padding-top:38px"><a href="#"><img src="images/ok.jpg" width="25" height="17" border="0"></a></td>
+						</tr>
+						<tr><td colspan="3" style="padding-left:23px;padding-bottom:5px"><font face="tahoma" style="font-size:11px;color:#FFFFFF"><a href="#" style="color:#FFFFFF">Forgot password</a><img src="images/spacer.gif" width="28" height="1"><a href="#" style="color:#FFFFFF">Register</a></font></td></tr>
+						</table>
+					</td>
+				</tr>
+				<tr><td><img src="images/but-2.jpg" width="210" height="38"></td></tr>
+				<tr>
+					<td width="210" height="100%" valign="top" background="images/back-but-2.jpg" style="padding-left:30px;padding-top:5px;padding-bottom:5px;padding-right:40px">						
+						<div style=" line-height:15px;padding-bottom:5px">
+						  <p>Team One<br>
+						    University Heights<br>
+						    Newark, NJ 07102</p>
+                          <p>1800-555-5555</p>
+						</div>						
+					</td>
+				</tr>				
+				</table>
+			</td>
+			
+			
+			
+			<td width="555" height="10" valign="top">
+				<table width="555" height="100%"  border="0" cellspacing="0" cellpadding="0" background="images/back-up-3.jpg">
+				<tr>
+					<td width="555" height="10" background="images/up-3.jpg" style="background-repeat:no-repeat;background-position:top">
+						<table width="100%" height="10"  border="0" cellspacing="0" cellpadding="0" background="images/end-3.jpg" style="background-repeat:no-repeat;background-position:bottom">
+						<tr>
+						  <td colspan="2" style="padding-left:110px;padding-bottom:35px" valign="top"> <strong>CONTACT US.</strong><img src="images/but-10.jpg" width="248" height="38"></td></tr>
+						<tr>
+							<td width="132" height="100%" valign="top" style="padding-left:27px;padding-top:4px" align="right">
+								<font face="tahoma" style="font-size:10px;color:#0CADFF"><strong>
+									 FIRST NAME &nbsp;* 	 	
+	                                 </strong>
+								<div style=" padding-top:8px"><strong>LAST NAME&nbsp;*</strong></div>
+								 	 	
+									 <div style=" padding-top:8px"><strong>COMPANY NAME&nbsp;*</strong></div>
+									 <strong> 	
+									 <div style=" padding-top:8px">ADDRESS &nbsp;*</div> 	 	
+									 <div style=" padding-top:8px">CITY &nbsp;*</div>    
+									 <div style=" padding-top:8px">STATE &nbsp;*</div>	 	 
+									 <div style=" padding-top:8px">COUNTRY &nbsp;*</div>	 	 
+									 <div style=" padding-top:8px">EMAIL </div>	  
+									 <div style=" padding-top:8px">OTHER NOTES</div></strong>   
+								<div style=" font-family:Arial;font-size:11px;color:#FF0600;padding-top:3px">* - fields<br>necessary to fill</div>
+								</font>
+							</td>							
+							<td width="423" valign="top" style="padding-left:16px;padding-top:0px">		
+									<input name="" type="text" style="width:243px;height:17px;font-size:11px;margin-bottom:1px"><br>			
+									<input name="" type="text" style="width:243px;height:17px;font-size:11px;margin-bottom:1px"><br>
+									<input name="" type="text" style="width:243px;height:17px;font-size:11px;margin-bottom:1px"><br>
+									<input name="" type="text" style="width:243px;height:17px;font-size:11px;margin-bottom:1px"><br>
+									<input name="" type="text" style="width:243px;height:17px;font-size:11px;margin-bottom:1px"><br>
+									<input name="" type="text" style="width:243px;height:17px;font-size:11px;margin-bottom:1px"><br>
+									<input name="" type="text" style="width:243px;height:17px;font-size:11px;margin-bottom:1px"><br>
+									<input name="" type="text" style="width:243px;height:17px;font-size:11px;margin-bottom:1px"><br>
+									<input type="text" style="width:243px;height:47px;font-size:11px;margin-bottom:2px"><br>
+									<div style=" padding-left:105px;padding-bottom:8px"><a href="#"><img src="images/submit.jpg" width="71" height="33" border="0"></a><a href="#"><img src="images/clear.jpg" width="71" height="33" border="0"></a></div>																	
+							</td>																					
+						</tr>
+						</table>
+					</td>
+				</tr>
+				<td width="555" height="33" align="left" background="images/back-tab.jpg">
+					<table width="554" height="33"  border="0" cellspacing="0" cellpadding="0"><tr><td width="553" height="33" background="images/back-but-4.jpg">	<img src="images/but-4.jpg" width="157" height="33"><img src="images/spacer.gif" width="108" height="1"><img src="images/3-but-5.jpg" width="142" height="33"></td></tr></table></td>
+				<tr>
+					<td width="555" height="100%" background="images/back-tab.jpg">
+						<table width="555" height="100%"  border="0" cellspacing="0" cellpadding="0">					
+						<tr>
+							<td width="281" height="100%" valign="top" style="padding-bottom:10px;padding-top:10px">	
+							<div style=" padding-left:26px">
+								<font face="tahoma" style="font-size:10px;color:#666666;line-height:14px">
+					    -  &nbsp;<strong>Hospitals</strong><br>
+								   Special discounts are available to private and public services.<br>
+									-  &nbsp;<strong>Private Practices</strong><br>
+					   Please contact us to find out our special rates we can offer your practice.<br>
+		                     -  &nbsp;<strong>Medical Executive</strong><br>
+									   Please contact us to hear about our special offers<br>									
+							  </font></div>								
+						   </td>
+														
+							<td width="2" height="100%" background="images/back-line-up-1.jpg">
+								<table width="2" height="100%"  border="0" cellspacing="0" cellpadding="0">
+									<tr><td><img src="images/line-up-1.jpg" width="2" height="50"></td></tr>
+									<tr><td height="100%"><img src="images/spacer.gif" width="2" height="1"></td></tr>
+									<tr><td><img src="images/end-line-up-1.jpg" width="2" height="47"></td></tr>
+								</table>
+							</td>
+														
+							<td width="272" height="100%" valign="top" style="padding-top:19px;padding-left:10px">
+								<table width="272" height="100%" border="0" cellspacing="0" cellpadding="0">								
+								<tr>
+									<td width="103" height="100%" valign="top" style="padding-left:15px;padding-top:4px" align="right">
+										<font face="tahoma" style="font-size:10px;color:#666666;line-height:11px">	<strong>						
+											category	
+											<div style=" padding-top:9px">speciality</div>	
+											<div style="padding-top:9px">degree</div>	
+											<div style="padding-top:8px">experience</div>								
+									    </strong></font>			
+									</td>
+									<td width="169" height="100%" valign="top" style="padding-left:10px">
+										<input name="" type="text" style="width:113px;height:17px;font-size:11px;margin-bottom:1px"><br>
+										<input name="" type="text" style="width:113px;height:17px;font-size:11px;margin-bottom:1px"><br>
+										<input name="" type="text" style="width:113px;height:17px;font-size:11px;margin-bottom:1px"><br>
+										<input name="" type="text" style="width:113px;height:17px;font-size:11px;margin-bottom:1px"><br>
+										<div style=" padding-left:42px"><a href="#"><img src="images/search.jpg" width="73" height="31" border="0"></a></div>
+									</td>
+								</tr>
+								</table>
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>								
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td width="765" height="79" colspan="2" background="images/end.jpg" style="background-repeat:no-repeat;background-position:top;padding-top:18px" align="center" valign="top">
+				<font face="tahoma" style="font-size:10px;color:#FFFFFF"><strong>
+					<a href="index.html" style="color:#FFFFFF;text-decoration:none">HOME</a>   &nbsp;&nbsp;::&nbsp;&nbsp;   
+					<a href="index-2.html" style="color:#FFFFFF;text-decoration:none">SUPPORT</a>     &nbsp;&nbsp;::&nbsp;&nbsp;
+					<a href="index-4.html" style="color:#FFFFFF;text-decoration:none">CONTACTS</a>&nbsp;&nbsp;::&nbsp;&nbsp;   
+					<a href="#" style="color:#FFFFFF;text-decoration:none">FAQ</a> :: MEMBERS</strong>
+				<div style=" padding-top:24px;color:#858484">Copyright &copy; 2019 Medi Records Inc.</div></font>
+				
+			</td>
+		</tr>
+		<tr><td colspan="2" height="100%"><img src="images/spacer.gif" width="1" height="1"></td></tr>
+		</table>
+	</td>
+	
+	
+	
+    <td width="9" height="100%" background="images/back-right.jpg"><img src="images/spacer.gif" width="9" height="1"></td>
+</tr>
+</table>
+</center>
+</BODY>
+</HTML>
