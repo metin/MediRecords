@@ -166,5 +166,9 @@ ALTER TABLE `users`
 ALTER TABLE `user_details`
   ADD CONSTRAINT `user_details_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
-  SET foreign_key_checks = 1;
+SET foreign_key_checks = 1;
+
+
+
+
   
