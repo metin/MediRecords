@@ -7,4 +7,4 @@ It uses basic Java/JEE componets to implements a MVC framework.
 * Views are jsp pages
 * Models are POJOs
 
-It uses Oracle as a database.
+It uses Oracle as a database. Persistence is done through EJBs.
